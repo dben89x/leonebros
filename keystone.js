@@ -19,6 +19,8 @@ keystone.init({
 	'views': 'templates/views',
 	'view engine': 'jade',
 
+	'mongo': process.env.MONGO_URL || 'mongodb://localhost:27017',
+
 	'emails': 'templates/emails',
 
 	'auto update': true,
